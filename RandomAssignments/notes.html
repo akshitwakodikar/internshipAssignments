@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <style>
+    body {
+      margin: 20px;
+      font-family: Arial;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    .note {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .danger {
+      background-color: #ffe5e5;
+      border-left: 5px solid red;
+    }
+    .success {
+      background-color: #eaffea;
+      border-left: 5px solid green;
+    }
+    .info {
+      background-color: #e7f3ff;
+      border-left: 5px solid blue;
+    }
+    .warning {
+      background-color: #fffbea;
+      border-left: 5px solid yellow;
+    }
+    .note strong {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Notes</h1>
+  <div class="note danger">
+    <strong>Danger!</strong> Some text
+  </div>
+  <div class="note success">
+    <strong>Success!</strong> Some text
+  </div>
+  <div class="note info">
+    <strong>Info!</strong> Some text
+  </div>
+  <div class="note warning">
+    <strong>Warning!</strong> Some text
+  </div>
+</body>
+</html>

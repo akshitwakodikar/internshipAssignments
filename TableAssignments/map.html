@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provinces of British India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(58, 58, 58);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: #f9f9f9;
+            margin: auto;
+        }
+        caption {
+            margin: 10px 0;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .header {
+            text-align: center;
+            background-color: #EAECF0;
+        }
+        th, td {
+            border: 1px solid #a8aaad;
+            padding: 10px;
+            position: relative;
+            background-color: #f3f4f6;
+        }
+        th {
+            text-align: center;
+            position: relative;
+        }
+        .dropdown-button {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 32px;
+            cursor: pointer;
+        }
+        .dropdown-button::before,
+        .dropdown-button::after {
+            content: "";
+            display: block;
+            border-style: solid;
+            width: 0;
+            height: 0;
+        }
+        .dropdown-button::before {
+            border-width: 0 5px 5px 5px;
+            border-color: transparent transparent black transparent;
+            margin-bottom: 2px;
+        }
+        .dropdown-button::after {
+            border-width: 5px 5px 0 5px;
+            border-color: black transparent transparent transparent;
+        }
+        .heading {
+            color: rgb(27, 27, 27);
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        img {
+            width: 100%;
+            max-width: 550px;
+            display: block;
+            margin: auto;
+        }
+        .element {
+            color: #3366CC;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Provinces of British India (1907)</caption>
+        <tr class="header">
+            <th>Province
+                <div class="dropdown-button"></div>
+            </th>
+            <th>Area (km²)
+                <div class="dropdown-button"></div>
+            </th>
+            <th>Population in million (1901)
+                <div class="dropdown-button"></div>
+            </th>
+            <th>Chief Administration
+                <div class="dropdown-button"></div>
+            </th>
+            <th>Map
+                <div class="dropdown-button"></div>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="4" class="heading">Major Provinces</th>
+            <td rowspan="12"><img src="map.jpg" alt="map"></td>
+        </tr>
+        <tr>
+            <td class="element">Assam Province</td>
+            <td>130000</td>
+            <td>6</td>
+            <td class="element">Chief Commissioner</td>
+        </tr>
+        <tr>
+            <td class="element">Bengal Presidency<sup>[b]</sup></td>
+            <td>390000</td>
+            <td>75</td>
+            <td class="element">Lieutenant-Governor</td>
+        </tr>
+        <tr>
+            <td class="element">Bombay Presidency</td>
+            <td>320000</td>
+            <td>19</td>
+            <td class="element">Governor-in-Council</td>
+        </tr>
+        <tr>
+            <td class="element">Central Provinces and Berar</td>
+            <td>270000</td>
+            <td>13</td>
+            <td class="element">Chief Commissioner</td>
+        </tr>
+        <tr>
+            <td class="element">Madras Presidency</td>
+            <td>370000</td>
+            <td>38</td>
+            <td class="element">Governor-in-Council</td>
+        </tr>
+        <tr>
+            <td class="element">Punjab<sup>[c]</sup></td>
+            <td>250000</td>
+            <td>20</td>
+            <td class="element">Lieutenant-Governor</td>
+        </tr>
+        <tr>
+            <td class="element">United Provinces</td>
+            <td>280000</td>
+            <td>48</td>
+            <td class="element">Lieutenant-Governor</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="heading">Minor Provinces</th>
+        </tr>
+        <tr>
+            <td class="element">Ajmer-Merwara</td>
+            <td>7000</td>
+            <td>477</td>
+            <td><i>ex offcio</i> Chief Commissioner</td>
+        </tr>
+        <tr>
+            <td class="element">Andaman and Nicobar Islands</td>
+            <td>78000</td>
+            <td>25</td>
+            <td>Chief Commissioner</td>
+        </tr>
+        <tr>
+            <td class="element">Coorg Province</td>
+            <td>4100</td>
+            <td>181</td>
+            <td><i>ex offcio</i> Chief Commissioner</td>
+        </tr>
+    </table>
+</body>
+</html>
