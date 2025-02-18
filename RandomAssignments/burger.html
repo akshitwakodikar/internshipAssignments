@@ -23,6 +23,8 @@
       max-width: 100%;
       height: auto;
       border-radius: 5px;
+      display: block;
+      margin: 10px auto; /* Center the image */
     }
     .coupon h1 {
       font-size: 20px;
@@ -53,11 +55,13 @@
 <body>
   <div class="flex">
     <p><strong>Company Logo</strong></p>
-    <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/master/pass/Smashburger-recipe-120219.jpg" alt="Burger Image">
-    <h1>20% OFF YOUR PURCHASE</h1>
-    <p>A hamburger, or simply a burger, is a dish consisting of fillings usually a patty of ground meat, typically beef placed inside a sliced bun or bread roll. </p>
-    <p>Use Promo Code: <span class="promo-code">BO786</span></p>
-    <p class="expires">Expires: Jan 03, 2021</p>
+    <div class="coupon">
+      <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/master/pass/Smashburger-recipe-120219.jpg" alt="Burger Image">
+      <h1>20% OFF YOUR PURCHASE</h1>
+      <p>A hamburger, or simply a burger, is a dish consisting of fillings usually a patty of ground meat, typically beef placed inside a sliced bun or bread roll.</p>
+      <p>Use Promo Code: <span class="promo-code">BO786</span></p>
+      <p class="expires">Expires: Jan 03, 2021</p>
+    </div>
   </div>
 </body>
 </html>
