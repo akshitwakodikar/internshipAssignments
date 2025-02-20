@@ -1,0 +1,1 @@
+This repository contains the assignments and projects completed during my internship at Babhale Infotech Solutions. This repository contains the assignments and projects I worked on during my internship, showcasing hands-on experience, problem-solving skills, and technical growth.
