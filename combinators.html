@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Combinators</title>
+<style>
+  div p {
+    color: red;
+  }
+
+
+  ul > li {
+    font-weight: bold; 
+  }
+
+  h2 + p {
+    text-decoration: underline;
+  }
+
+  
+  h3 ~ p {
+    background-color: gray; 
+  }
+</style>
+</head>
+<body>
+
+  <div>
+    <p>This paragraph is red (descendant).</p>
+    <section><p>This is also red (descendant)</p></section>
+  </div>
+
+  <ul>
+    <li>Bold list item (child)</li>
+    <p>This paragraph is not bold</p>
+    <li>Bold list item (child)</li>
+    <section><li>This is not bold</li></section>
+  </ul>
+
+  <h2>Heading 2</h2>
+  <p>This paragraph is underlined (next sibling).</p>
+  <p>This paragraph is not underlined.</p>
+
+  <h3>Heading 3</h3>
+  <p>This paragraph has a light gray background (subsequent sibling).</p>
+  <p>This paragraph also has a light gray background (subsequent sibling).</p>
+  <div><p>This is also light gray(subsequent sibling)</p></div>
+
+</body>
+</html>
