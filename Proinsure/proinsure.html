@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proinsure</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: skyblue;
+            height: 100px;
+            padding: 10px 55px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+        .header h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+        .nav a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 25px;
+        }
+        .nav a:hover{
+            color: rgb(3,3,67);
+        }
+        .nav .btn{
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 15px 20px;
+            transition:background-color 1s;
+        }
+        .nav .btn:hover{
+            background-color: rgb(3,3,67);
+            color: white;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            padding: 50px;
+        }
+        .heading{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .underline{
+            width:450px;
+            height: 1px;
+            background-color: grey;
+            margin: 10px auto;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            color:black;
+            text-align: center;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .features {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .feature-box {
+            width: 30%;
+            text-align: center;
+        }
+
+        .feature-box .icon {
+            width: 60px;
+            height: 60px;
+            background:skyblue; 
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+        }
+
+        .feature-box h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .feature-box p {
+            font-size: 16px;
+            color:black;
+        }
+        .last{
+            height: 50px;
+            font-weight: bold;
+            font-size: 40px;
+            padding: 20px 50px;
+            display: flex;
+        }
+        .last-underline{
+            width:1500px;
+            height: 1px;
+            background-color: grey;
+            margin: 10px auto;   
+        }
+        .last-section{
+            text-decoration: none;
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 300px;
+            padding-right: 300px;
+            padding-bottom: 15px;
+        }
+        .last-section > a{
+            text-decoration:none;
+            color: gray;
+        }
+        .footer{
+            background-color: skyblue;
+            padding: 30px 55px;
+            top: 0px;
+            font-size: large;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .purple{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:purple; 
+            color: white;
+            padding: 50px;
+            margin-top: 80px;
+        }
+        .purple-content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 50%;
+        }
+        .purple > div >h1{
+            text-align: left;
+            font-size: 55px;
+        }
+        .purple > p{
+            text-align: left;
+        }
+        .purple .purple-content .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border: 2px solid white;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            transition:background-color 1s;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .purple .purple-content .btn:hover{
+            background-color: skyblue;
+            color:black;
+        }
+        .img{
+            width: 100%;
+            padding: 20px;
+        }
+        .underline-ins{
+            width:450px;
+            height: 3px;
+            background-color: grey;
+            margin: 5px auto;
+            margin-left: 0px;
+        }
+        .about-section {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width:100%;
+            gap: 40px;
+            justify-content: space-between;
+        }
+        .about-section img {
+            width: 500px;
+            height: auto;
+            border-radius: 15px;
+            margin-left: 100px;
+        }
+        .about-content {
+            max-width: 400px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: 150px;
+        }
+        .about-content h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color:black;
+            margin-bottom: 15px;
+        }
+        .about-content p {
+            font-size: 16px;
+            color: black;
+            line-height: 3;
+            margin-bottom: 20px;    
+        }
+        .about-content .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            border: 2px solid black;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        .about-content .btn:hover {
+            background-color: skyblue;
+            color: white;
+        }
+        .about-section div h2{
+            font-size: 40px;
+        }
+        .section {
+            background-color: skyblue;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
+            max-width: 100%;
+            margin:30px 80px 30px 80px;
+        }
+        .text {
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: left;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            background: transparent;
+            border: 2px solid black;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition:background-color 1s;
+        }
+        .btn:hover {
+            background-color: rgb(3,3,67);
+            color: white
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header"><h1>Proinsure</h1>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a class="btn" href="#">View Plans</a>
+    </div>
+    </div>
+
+    <div class="purple">
+        <div class="purple-content">
+            <div class="underline-ins"></div>
+            <h1>Humanizing Your Insurance</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo temporibus alias magni distinctio sunt unde architecto ipsum dicta, praesentium amet est dolore.</p>
+            <a href="#" class="btn">View Plans</a>
+        </div>
+        <div>
+            <img src="01.png" alt="Insurance Image">
+        </div>
+    </div>
+
+    <div class="about-section">
+        <img src="02.png" alt="About Insurance">
+        <div class="about-content">
+            <h2>About the insure</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio rem sequi, fuga laboriosam maiores voluptatum in ducimus ipsum animi placeat labore!</p>
+            <a href="#" class="btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            Find out more <br> about how we work
+        </div>
+        <button class="btn">How We Work</button>
+    </div>
+
+<div class="container">
+    <h2 class="heading">We are different</h2>
+    <div class="underline"></div>
+    <div class="features">
+        <div class="feature-box">
+            <div class="icon"></div>
+            <h3>Easy Process</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae et provident commodi atque fugiat.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon"></div>
+            <h3>Affordable Price</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae et provident commodi atque fugiat.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon"></div>
+            <h3>You Come First</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae et provident commodi atque fugiat.</p>
+        </div>
+    </div>
+</div>
+<div class="last">Proinsure</div>
+<div class="last-underline"></div>
+<div class="last-section">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">How We Work</a>
+</div>
+<div class="footer">© AltCampus Services Pvt Ltd, 2018-present</div>
+</body>
+</html>
