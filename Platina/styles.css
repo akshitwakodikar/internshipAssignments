@@ -538,39 +538,3 @@ p {
     0% { transform: translateX(0); }
     100% { transform: translateX(5px); }
 }
-
-@media (max-width: 768px) {
-    input, select {
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .feature-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .door {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .container, .container-text {
-        width: 100%;
-        min-height: auto;
-    }
-
-    .container img {
-        height: 300px; 
-    }
-}
