@@ -57,6 +57,87 @@ function getPositiveNumbers(arr) {
 console.log("array of integers = [-3, 7, -1, 9, -12, 8, 4, -6, 2, 10]");
 console.log("positive numbers are as follows : ",getPositiveNumbers([-3, 7, -1, 9, -12, 8, 4, -6, 2, 10]));
 
+// 11. Sum of digits of a number
+function sumOfDigits(num) {
+    let sum = 0;
+    while (num > 0) {
+        sum += num % 10;
+        num = Math.floor(num / 10);
+    }
+    return sum;
+}
+console.log("Sum of digits:", sumOfDigits(1234));
+
+// 12. Rotate array left
+function rotateLeft(arr) {
+    arr.push(arr.shift());
+    return arr;
+}
+console.log(rotateLeft([2, 8, 3]));
+
+// 13. Rotate array right
+function rotateRight(arr) {
+    arr.unshift(arr.pop());
+    return arr;
+}
+console.log(rotateRight([2, 8, 3]));
+
+// 14. Find max in an array
+function findMax(arr) {
+    let max = arr[0]; 
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]; 
+        }
+    }
+    return max;
+}
+console.log("Max number:", findMax([3, 7, 1, 9, 12, 8, 4, 6]));
+
+
+// 15. Check if a number is prime
+function isPrime(num) {
+    if (num < 2) 
+        return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) 
+    {
+        if (num % i === 0) 
+            return false;
+    }
+    return true;
+}
+console.log("17 is prime number : ",isPrime(17));
+
+// 16. Reverse an array
+function reverseArray(arr) {
+    return arr.reverse();
+}
+console.log("reversed arraa",reverseArray([1, 2, 3, 4, 5, 6, 7, 8]));
+
+// 17. Reverse a string
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+console.log(("hello"));
+console.log(reverseString("hello"));
+
+// 18. Merge two arrays
+function mergeArrays(arr1, arr2) {
+    return [...arr1, ...arr2];
+}
+console.log(mergeArrays([1, 2, 3], [4, 5, 6]));
+
+// 19. Unique elements in either array
+function uniqueElements(arr1, arr2) {
+    return arr1.filter(x => !arr2.includes(x)).concat(arr2.filter(x => !arr1.includes(x)));
+}
+console.log(uniqueElements([1, 2, 3, 10, 5, 3, 14], [1, 4, 5, 6, 14]));
+
+// 20. Elements in first array but not in second
+function difference(arr1, arr2) {
+    return arr1.filter(x => !arr2.includes(x));
+}
+console.log(difference([1, 2, 3, 10, 5, 3, 14], [-1, 4, 5, 6, 14]));
 
 // 21. Even or Odd function
 function evenOrOdd(num) {
